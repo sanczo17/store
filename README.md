@@ -182,4 +182,5 @@ po zbudowaniu projektu, **przejdź do sekcji**: ["## Uruchamianie serwera aplika
 2. **Kroki:**
   - Utwórz metodę `sellItem` w klasie `BasketService`.
   - Utwórz servlet `SellFromBasketServlet` z metodą `doPost`, która obsłuży odejmowanie produktów.
-  - Dodaj do plików `*.jsp` nowy formularz (`<form>`), analogiczny do formularza dodawania produktów, ale realizujący funkcję odejmowania produktów z koszyka.
+  - Dodaj do plików `*.jsp` nowy formularz (`<form>`), analogiczny do formularza dodawania produktów, ale realizujący funkcję odejmowania produktów z koszyka.#   s t o r e  
+ 
