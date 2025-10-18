@@ -9,8 +9,8 @@ import pl.wsei.store.service.BasketService;
 
 import java.io.IOException;
 
-@WebServlet(name = "AddToBasketServlet", value = "/add-to-basket")
-public class AddToBasketServlet extends HttpServlet {
+@WebServlet(name = "SellFromBasketServlet", value = "/sell-from-basket")
+public class SellFromBasketServlet extends HttpServlet {
 
     private final BasketService basketService = new BasketService();
 
@@ -29,7 +29,7 @@ public class AddToBasketServlet extends HttpServlet {
         }
 
         try {
-            basketService.buyItem(item, quantity);
+            basketService.sellItem(item, quantity);
             response.sendRedirect(request.getContextPath() + "/basket-servlet");
         } catch (Exception e) {
             throw new ServletException("Error processing request", e);

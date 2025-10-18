@@ -13,6 +13,9 @@ public class Basket {
     @Column(name = "item")
     private String item;
 
+    @Column(name = "quantity")
+    private int quantity;
+
     public String getItem() {
         return item;
     }
@@ -27,5 +30,13 @@ public class Basket {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }
